@@ -1,0 +1,47 @@
+<div class="tableBox">
+    <md-toolbar class="md-table-toolbar md-default">
+        <div class="md-toolbar-tools">
+            <span>数据过滤结果</span>
+        </div>
+    </md-toolbar>
+    <md-table-container>
+        <table md-table multiple md-progress="ctrl.promise">
+            <thead md-head>
+                <tr md-row>
+                    <th md-column md-numeric ng-repeat="row in theadrows">
+                        <md-menu>
+                            <span ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+                                {{row.name}}
+                            </span>
+                            <md-menu-content width="4">
+                                <md-menu-item>
+                                    <md-button ng-click="ctrl.orderColumn($index,0)">
+                                        升序
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-divider></md-menu-divider>
+                                <md-menu-item>
+                                    <md-button ng-click="ctrl.orderColumn($index,1)">
+                                        降序
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-divider></md-menu-divider>
+                                <md-menu-item>
+                                    <md-button ng-click="ctrl.toggleNotifications()">
+                                        其他
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+                    </th>
+                </tr>
+            </thead>
+            <tbody md-body>
+                <tr md-row ng-repeat="rows in bodyrows">
+                    <td md-cell ng-repeat="row in rows">{{row}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </md-table-container>
+    <md-table-pagination md-limit="ctrl.limit" md-boundary-links="ctrl" md-label="{{ctrl.label}}" md-limit-options="ctrl.limitOption" md-page="ctrl.page" md-total="{{ctrl.total}}" md-on-paginate="ctrl.getDesserts" md-page-select></md-table-pagination>
+</div>

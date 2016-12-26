@@ -1,0 +1,132 @@
+<form ng-cloak>
+    <div layout="row" class="selBox">
+        <div layout="row" flex="35" ng-repeat="cards in ctrl.selectCards">
+            <div flex="80" class="{{cards.class}}">
+                <h3>{{cards.name}}</h3>
+                <div layout="column" flex>
+                    <div flex ng-repeat="card in cards.cards">
+                        <md-checkbox ng-click="ctrl.toggle(card, cards.value)">
+                            <span>{{card}}</span>
+                        </md-checkbox>
+                    </div>
+                </div>
+            </div>
+            <div flex="20">+</div>
+        </div>
+        <div layout="row" flex="25">
+            <div flex="100" class="forth">
+                <h3>时间</h3>
+                <div layout="column" layout-wrap flex>
+                    <md-radio-group ng-model="data.group1">
+                        <md-radio-button value="day">前日</md-radio-button>
+                        <md-radio-button value="week">上周</md-radio-button>
+                        <md-radio-button value="month">上月</md-radio-button>
+                    </md-radio-group>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--<div layout="row" flex class="selBox">
+            <div flex="25" class="first">
+                    <h3>咨询类别</h3>
+                    <div layout="column" flex>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>对公网银转账</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>房产质押</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>股权质押</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>手机银行转账</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>理财产品</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>最新活动</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>以往活动</span>
+                            </md-checkbox>
+                        </div>
+                    </div>
+            </div>
+            <div flex="10">+</div>
+            <div flex="25" class="second">
+                    <h3>投诉</h3>
+                    <div layout="column" flex>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>一般投诉</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>重大投诉</span>
+                            </md-checkbox>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div flex="10">+</div>
+            <div flex="25" class="third">
+                    <h3>渠道</h3>
+                    <div layout="column" layout-wrap flex>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>微信</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)"">
+                            <span>固定电话</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>QQ</span>
+                            </md-checkbox>
+                        </div>
+                        <div flex>
+                            <md-checkbox ng-click="ctrl.toggle(item, selected)">
+                                <span>手机</span>
+                            </md-checkbox>
+                        </div>
+                    </div>
+            </div>
+            <div flex="10" layout-align="center center">+</div>
+            <div flex="25" class="forth">
+                    <h3>时间</h3>
+                    <div layout="column" layout-wrap flex>
+                        <div flex="50" ng-repeat="item in items">
+                             <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                                 {{ item }} <span ng-if="exists(item, selected)">selected</span>
+                             </md-checkbox>
+                         </div>
+                        <md-radio-group ng-model="data.group1">
+                            <md-radio-button value="day">前日</md-radio-button>
+                            <md-radio-button value="week">上周</md-radio-button>
+                            <md-radio-button value="month">上月</md-radio-button>
+                        </md-radio-group>
+                    </div>
+            </div>
+        </div>-->
+        <md-button class="selFind" ng-click="ctrl.goSearch(ctrl.selecteds)">find</md-button>
+</form>

@@ -1,0 +1,46 @@
+.chartBox{
+    border: 3px  solid transparent;
+    background: #fff;
+    padding: 20px;
+    -webkit-transition: box-shadow 1s;
+    -moz-transition: box-shadow 1s;
+    -ms-transition: box-shadow 1s;
+    -o-transition: box-shadow 1s;
+    transition: box-shadow 1s;
+}
+.chartBox:hover{
+    cursor: pointer;
+    border-color:rgb(145,220,229);
+    -webkit-box-shadow: 0 0 8px 8px #dedede;
+    -moz-box-shadow: 0 0 8px 8px #dedede;
+    box-shadow:0 0 8px 8px #dedede;
+}
+
+.chartBox > div{
+    margin: 0 auto;
+}
+
+/* 探索按钮*/
+.btnBox{
+    overflow: hidden;
+}
+
+.explore,.del{
+    float: right;
+}
+.del md-icon{
+    min-width: 23px;
+    min-height: 23px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+.chartBox .btnBox .explore:hover{
+    background-color: rgba(223,204,193,.5);
+}
+.chartBox .btnBox .del:hover{
+    background-color: rgba(0,0,0,.1);
+}
+.btnBox .md-button.md-icon-button{
+    margin: 0;
+}

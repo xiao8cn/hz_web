@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 20px;
+    font-family: Helvetice,"microsoft yahei";
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    -webkit-overflow-scolling: touch;
+    background: #fefefe;
+}
+input[type='text']{
+    background-position-y:-1px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*login*/
+body{
+    background-image: url("../../../../static/images/loginBg.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.model{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+}
+
+.model>.container{
+    margin: 0 auto;
+    margin-top: 88px;
+    width: 442px;
+    height: 442px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #f1f2f4;
+    border-radius: 5px;
+}
+.head{
+    margin-bottom: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.headLeft{
+    float: left;
+    height: 72px;
+    line-height: 72px;
+}
+.headRight{
+    float: right;
+}
+.headRight h1{
+    font-size: 33px;
+}
+.head p{
+    text-align: center;
+    color: #94979e;
+}
+.inputBox>input{
+    float: left;
+    height: 76px;
+    width: 300px;
+    padding-left: 66px;
+    border: 1px solid #c8c8ca;
+    outline: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.inputBox>input:first-child{
+    background: #e6e7e9 url(../../../../static/images/name.png) no-repeat 20px 20px;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.inputBox>input:last-child{
+    border-radius:0 0 5px 5px;
+    background: #e6e7e9 url(../../../../static/images/pwd.png) no-repeat 20px 20px;
+}
+
+.inputBox>input:active{
+    background-color: #e6e7e9;
+}
+
+.loginBtn{
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    width: 366px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #549c8e;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4ab9a9;
+    margin-top: 24px;
+}
+
+.loginBtn:hover{
+    background-color: rgba(0,0,0,.8);
+    border-color: transparent;
+}

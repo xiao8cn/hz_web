@@ -1,0 +1,49 @@
+{
+  "name": "hz_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "babel-node tools/run bundle",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base dist"
+  },
+  "author": "jiaoju.wu",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-aria": "1.5.8",
+    "angular-i18n": "1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-messages": "1.5.8",
+    "angular-ui-router": "1.0.0-beta.3",
+    "babel-core": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.25.0",
+    "echarts": "^3.2.3",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "jquery": "^3.1.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.10.1",
+    "plugins": "^0.4.2",
+    "sass": "^0.5.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "ui-select": "^0.19.4",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "dependencies": {
+    "angular-material": "^1.1.1",
+    "angular-material-data-table": "^0.10.9",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}

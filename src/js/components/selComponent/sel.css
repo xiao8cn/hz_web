@@ -1,0 +1,41 @@
+md-dialog{
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.selBox>div>div:nth-child(2n){
+    line-height: 330px;
+    text-align: center;
+    font-size: 32px;
+}
+
+/*.selBox>div:nth-child(2n){
+    line-height: 330px;
+    text-align: center;
+    font-size: 32px;
+}*/
+
+.selBox>div>div:nth-child(2n+1){
+    padding: 10px;
+    border-radius: 10px;
+}
+.first{
+    background-color: rgb(231,206,204);
+}
+.second{
+    background-color: rgb(178,169,165);
+}
+.third{
+    background-color: rgb(220,213,211);
+}
+.forth{
+    background-color: rgb(2201,197,186);
+}
+.selFind{
+    width: 100%;
+    margin: 10px 0 0 0;
+    background-color: rgb(139,177,229);
+    padding: 0;
+}
+

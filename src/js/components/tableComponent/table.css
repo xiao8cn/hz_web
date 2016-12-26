@@ -1,0 +1,74 @@
+.tableResult{
+    border-bottom :1px solid rgb(211, 202, 221);
+    border-right: 1px solid rgb(211, 202, 221);
+    border-collapse:collapse;
+    min-width: 60%;
+    margin: 20px auto 0;
+}
+.tableResult  thead {
+    font-size: 18px;
+}
+.tableResult thead tr{
+    background-color: rgb(249,249,249);
+}
+.tableResult td,.tableResult th{
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}
+.tableResult tr:nth-child(odd) {
+    background: rgb(252,252,252);
+}
+.pageList{
+    list-style: none;
+}
+.pageList li{
+    float: left;
+    padding: 0 5px;
+}
+
+
+md-backdrop.md-edit-dialog-backdrop {
+    z-index: 80;
+}
+.rightMenu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border: 1px solid #ddd;
+    /*background: rgba(220,220,220,.3);*/
+    background: #e9eff3;
+    border-radius: 5px;
+}
+.rightMenu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.rightMenu li{
+    padding: 10px 20px;
+}
+.rightMenu li>a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #0c0c0c;
+}
+.rightMenu li:hover{
+    background:#cccccc;
+}
+.rightMenu li:hover>a{
+    color: #fff;
+}
+
+.tableBox th span{
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.container {
+
+}

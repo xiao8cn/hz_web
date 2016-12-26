@@ -1,0 +1,9 @@
+<div layout="column">
+    <div flex class="header">
+        <scm-tree option="ctrl.params"></scm-tree>
+    </div>
+    <md-progress-linear ng-if="progress_flag" md-mode="determinate" value="{{determinateValue}}" style="position: fixed;top:48px"></md-progress-linear>
+    <div flex class="content">
+        <ui-view></ui-view>
+    </div>
+</div>

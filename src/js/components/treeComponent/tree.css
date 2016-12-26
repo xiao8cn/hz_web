@@ -1,0 +1,111 @@
+
+.nav-bar-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(105,133,167);
+    z-index: 100;
+    color: #ffffff;
+}
+
+.nav-bar-fixed span{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.nav-bar-fixed  md-datepicker{
+    margin-right: 2px;
+}
+
+.nav-bar-fixed .md-button{
+    min-width: 50px;
+}
+.nav-bar-fixed .md-button.md-icon-button{
+    margin: 0;
+}
+.nav-bar-fixed .md-icon-button + .md-datepicker-input-container{
+    margin-left:0;
+}
+
+.nav-bar-fixed .md-datepicker-input::-webkit-input-placeholder,.nav-bar-fixed .md-datepicker-input::-moz-placeholder{
+     color: #ccc;
+ }
+.nav-bar-fixed .md-default-theme .md-datepicker-input, .md-datepicker-input,.dateBox md-icon{
+    color: #fff;
+}
+.dateBox .md-datepicker-input-container{
+    color: #aaa;
+    border-color: #aaa;
+}
+.nav-bar-fixed .md-datepicker-triangle-button .md-datepicker-expand-triangle{
+    border-top-color: #aaa;
+}
+
+.navRight{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+}
+
+#search{
+    padding: 5px;
+    width: 160px;
+    height: 14px;
+    border-radius: 200px;
+    border: 1px solid transparent;
+    margin-top: 12px;
+    outline: none;
+    background-color: rgb(231,205,194);
+}
+
+#zan{
+    position: absolute;
+    top: 2px;
+    left: 130px;
+    min-height: 32px;
+    min-width: 32px;
+    background: url("../../../../static/images/zan.png") no-repeat right center;
+}
+
+#find{
+    display: inline-block;
+    background: url("../../../../static/images/find.png") no-repeat center center;
+    background-size: 20px 20px;
+    margin: -2px 0 0 6px;
+    padding: 0;
+    min-width: 26px;
+    min-height: 26px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius:50%;
+    border: 2px solid rgb(239,206,61);
+}
+
+.navRight .userBox{
+    display: inline-block;
+    height: 30px;
+    min-width: 28px;
+    width: 28px;
+    margin-top: 5px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: url("../../../../static/images/user.png") no-repeat center center;
+    background-size: 35px 35px;
+}
+
+.split{
+    height: 26px;
+    border: 1px  solid #aaaaaa;
+    margin: 16px 10px;
+}
+
+.menudemoMenuWidth .md-menu-demo {
+    padding: 24px; }
+
+.menudemoMenuWidth .menu-demo-container {
+    min-height: 200px; }

@@ -1,0 +1,50 @@
+{
+  "restype": 3,
+  "hhead": {
+    "channel": 369,
+    "channelType": 3,
+    "channelName": "华瑞客服",
+    "rechannel": 0,
+    "uid": "hozo",
+    "autoComplete": -1,
+    "deriF0": 26,
+    "textFNo": -1,
+    "rowsFNo": 26,
+    "anaFNo": 88888888,
+    "rawsHideBA": 0,
+    "rankFNo": -1,
+    "aggCount": 2,
+    "stepMax": 1024,
+    "localLimit": 0,
+    "statFilterMask": 0,
+    "ioMask": 1,
+    "algebraMask": 0,
+    "rawOutMask": 0,
+    "downloadOn": 1,
+    "dynamicURL": "",
+    "datePrelimit": {
+      "fno": 20,
+      "fname": "YC_DATE",
+      "maxRange": [ 20150808, 20160329 ],
+      "setRange": [ 20150808, 20160329 ]
+    },
+    "initInputList": [ 2, 3, 7, 48, 65, 11 ],
+    "initSumList": [  ],
+    "deleteViewList": [  ],
+    "initViewList": [ 3, 8, 15, 17, 18, 26 ],
+    "analysisList": [ 13, 14, 15 ],
+    "labelList": [  ],
+    "sumList": [ 13, 14, 15 ],
+    "viewSets": {
+      "count": 0,
+      "details": [
+        {
+          "tname": "Dynamic",
+          "flag": 1792,
+          "alias": {  },
+          "initList": [ [3, 1], [8, 1], [15, 1], [17, 1], [18, 1], [26, 1] ],
+          "assocList": [  ]
+        } ]
+        }
+      },
+        "hbody": [ { "fno": 0,  "flag": 151, "fname": "YC_PERSONID" }, { "fno": 1,  "flag": 151, "fname": "IDNUMBER" }, { "fno": 2,  "flag": 151, "fname": "mobil" }, { "fno": 3,  "flag": 151, "fname": "YC_OPENCHANNEL" }, { "fno": 4,  "flag": 151, "fname": "YC_USERNAME" }, { "fno": 5,  "flag": 151, "fname": "YC_EMAIL" }, { "fno": 6,  "flag": 7, "fname": "性别奇偶" }, { "fno": 7,  "flag": 7, "fname": "判别男女" }, { "fno": 8,  "flag": 151, "fname": "性别" }, { "fno": 9,  "flag": 7, "fname": "年龄截取" }, { "fno": 10,  "flag": 7, "fname": "年龄" }, { "fno": 11,  "flag": 7, "fname": "年龄判断标签" }, { "fno": 12,  "flag": 151, "fname": "年龄标签" }, { "fno": 13,  "flag": 262151, "fname": "进线次数" }, { "fno": 14,  "flag": 262151, "fname": "服务等待时间" }, { "fno": 15,  "flag": 262151, "fname": "通话时长（秒）" }, { "fno": 16,  "flag": 7, "fname": "最长单次通话时长" }, { "fno": 17,  "flag": 71, "fname": "投诉标签" }, { "fno": 18,  "flag": 71, "fname": "特别事件" }, { "fno": 19,  "flag": 71, "fname": "羊毛党标签" }, { "fno": 20,  "flag": 323, "fname": "YC_DATE" }, { "fno": 21,  "flag": 71, "fname": "id_area_code" }, { "fno": 22,  "flag": 151, "fname": "Province" }, { "fno": 23,  "flag": 151, "fname": "District" }, { "fno": 24,  "flag": 151, "fname": "County" }, { "fno": 25,  "flag": 323, "fname": "code_date" }, { "fno": 26,  "flag": 393220, "fname": "rows" } ] }

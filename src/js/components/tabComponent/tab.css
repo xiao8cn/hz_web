@@ -1,0 +1,37 @@
+.select{
+    top:48px;
+}
+md-toolbar.selectHead{
+    min-height: 40px;
+    background-color: #eee;
+}
+.zan{
+    float: right;
+}
+.selectHead .md-button:not([disabled]).md-icon-button:hover{
+    background-color: rgba(0,0,0,.3);
+}
+.sideSel>div:first-child{
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+.sideSel>div:last-child{
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+.sideSel md-checkbox,.sideSel md-radio-button{
+    font-size: 12px;
+    margin:0 10px 5px;
+}
+.sideSel h5{
+    margin:2px 10px 10px;
+}
+
+md-sidenav ,md-backdrop{
+    position: fixed;
+}
+md-backdrop.md-opaque{
+    /*background: transparent;*/
+}

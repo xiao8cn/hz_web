@@ -1,0 +1,29 @@
+<div layout="row" layout-wrap  layout-padding class="moduleBox">
+    <scm-chart ng-repeat="option in ctrl.options" option="option" exflag="true" flex="50" flex-sm="100" flex-xs="100"></scm-chart>
+    <scm-add flex="50" scm_click="ctrl.add_click" bind_controller="ctrl"></scm-add>
+</div>
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp select" md-component-id="right">
+    <md-toolbar class="selectHead">
+        <div>
+            <md-button class="md-icon-button zan" aria-label="search" ng-click="ctrl.addInitChar()">
+                <md-icon md-svg-icon="../../../../static/images/zan.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-content layout-padding>
+        <div layout="column" flex class="sideSel">
+            <md-radio-group ng-model="ctrl.selectedId" >
+                <div ng-repeat='param in ctrl.init_params' class="row">
+                    <div flex layout='row' layout-padding layout-align="start center" >
+                        <md-radio-button
+                                flex
+                                ng-value="param.id"
+                                class="md-primary" >
+                            {{param.name}}
+                        </md-radio-button>
+                    </div>
+                </div>
+            </md-radio-group>
+        </div>
+    </md-content>
+</md-sidenav>

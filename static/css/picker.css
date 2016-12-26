@@ -1,0 +1,237 @@
+body{
+  background: #FDFCF6;
+  /*background: #FAF0EA;*/
+  /*background: #161627;*/
+  font-family: 'Microsoft YaHei';
+    padding-top:47px;
+}
+
+.tab-panel{
+      padding-top: 47px;
+    }
+    ul.top-fixed{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: #5A86A9;
+    }
+    .nav-tabs{
+            border-color: transparent;
+        }
+    .chart,.section{
+      padding-top: 57px;
+      box-sizing: border-box;
+      _box-sizing: border-box;
+    }
+    input[type='date']{
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{
+        color: #F9D05D!important;
+        background-color: transparent;
+        border-color: transparent;
+    }
+nav,#myTab nav{
+  border-color:#352F44;
+}
+li#elevator{
+  float: right;
+}
+
+#elevator ul{
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+#elevator li .etitle {
+  font-family: 'Microsoft YaHei';
+  text-align: center;
+  font-weight: bold; 
+  height: 47px;
+  font-size: 18px;
+}
+input[type="date"]{
+  color: #3E3E3E;
+  background: transparent;
+  height: 47px;
+}
+
+#myTabContent>div>div{
+  margin: 0 auto;
+}
+
+/*搜索框*/
+#search{
+    width: 300px;
+    height: 37px;
+    margin-top: 5px;
+    border-radius: 60px;
+    border: none;
+    background: #F1CEC3;
+    padding-left: 10px;
+    color: #000;
+    outline: none;
+    font-size: 20px;
+}
+
+.search{
+  margin-left: 50px;
+}
+
+#find{ 
+    margin: 5px 0 0 10px;
+    width: 37px;
+    height: 37px;
+    border: none;
+    border-radius: 50%;
+    background: #fff url(../images/search-1.png) no-repeat center center;
+    outline: none;
+}
+#chartBox>div{
+    float: left;
+}
+#myTab a{
+  color: #3E3E3E;
+  font-size: 18px;
+}
+#myTab a:hover{
+      color: #352F44;;
+}
+@keyframes myfirst
+{
+from {margin-top: 50vh;opacity: 0;}
+to {margin-top: 30vh;opacity: 1;}
+}
+
+@-moz-keyframes myfirst /* Firefox 
+{
+from {margin-top: 50vh;opacity: 0;}
+to {margin-top: 30vh;opacity: 1;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from {margin-top: 50vh;opacity: 0;}
+to {margin-top: 30vh;opacity: 1;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {margin-top: 50vh;;opacity: 0;}
+to {margin-top: 30vh;opacity: 1;}
+}
+#logoBox .box>div{
+    float:left;
+    color: #000;
+}
+#logoBox .box h1{
+   font-weight: bold;
+}
+#logoBox .box{
+  width: 36%;
+  /*margin: 0 auto;*/
+  margin-left: 369px;
+  margin-top: 35vh;
+  overflow: hidden;
+  animation: myfirst 3s linear 2s;
+  /* Firefox: */
+  -moz-animation: myfirst 3s linear;
+  /* Safari 和 Chrome: */
+  -webkit-animation: myfirst 3s linear;
+  /* Opera: */
+  -o-animation: myfirst 3s linear;
+}
+
+#elevator .nav-tabs>li.active>a,#elevator .nav-tabs>li.active>a:hover,#elevator .nav-tabs>li.active>a:focus {
+        cursor: default;
+        border-bottom: 4px solid #D62B77;
+        color: #F1CEC3!important;
+}
+
+#TipContainer,.tableContainer{
+  display: none;
+  position: fixed;
+  right: 0px;
+  top: 25vh;
+  width: 40%;
+  height: 60vh;
+  background: rgba(255,255,255,.3);
+}
+.tableContainer{
+  display: block;
+  left: 0px;
+  background: #fff;
+}
+
+#closed,.close{
+  font-size: 30px;
+  position: absolute;
+  right: 8px;
+  top: 0px;
+}
+#closed:hover,.close:hover{
+  text-decoration: none;
+  color: #000;
+}
+
+.grid{
+  margin-top: 20px;
+  width:100%;
+  height:40vh;
+}
+.tableHead{
+  text-align: center;
+  font-weight: bold;
+}
+
+.model{
+  display: none;
+  position: fixed;
+  top:0;
+  right:0;
+  left: 0;
+  bottom:0;
+  background: rgba(253,252,246,.5);
+}
+#searchBox{
+   position: relative;
+   width: 50%;
+   height: 50vh;
+   background: #FAF1E8;
+   padding: 0 20px;
+   margin: 25vh auto 0;
+   text-align: center;
+   border: 2px solid #F1CFCD;
+   overflow: auto;
+}
+div.group{
+  box-sizing: border-box;
+  padding-left:10%;
+  margin-top: 10px;
+  text-align: left;
+  float:left;
+  width: 25%;
+}
+
+input[type="button"]{
+  margin-top:10px;
+}
+
+.result{
+  position: fixed;
+  top: 10vh;
+  left: 10%;
+  width: 80%;
+  height: 60vh;
+  background: rgba(255,255,255,.6);
+}
+.modelClose{
+   position: absolute;
+   top: -5px;
+   right: 5px;
+   font-size: 40px;
+   text-decoration: none;
+}

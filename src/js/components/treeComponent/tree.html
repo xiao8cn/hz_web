@@ -1,0 +1,61 @@
+    <md-nav-bar md-selected-nav-item="ctrl.currentNavItem" nav-bar-aria-label="navigation links" class="tree nav-bar-fixed">
+        <md-nav-item md-nav-click="ctrl.gotoView('day')" name="day">日表</md-nav-item>
+        <md-nav-item md-nav-click="ctrl.gotoView('week')" name="week">周表</md-nav-item>
+        <md-nav-item md-nav-click="ctrl.gotoView('month')" name="month">月表</md-nav-item>
+        <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+        <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+        <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+        -->
+        <div layout="row" class="dateBox">
+            <md-datepicker
+                    md-placeholder="起始日期"
+                    md-min-date = "minDate"
+                    md-max-date = "maxDate"
+                    layout="row"
+                    layout-align="start center"
+                    ng-model="startDate"
+                    ng-change="ctrl.dateChange({startDate:startDate})"
+            >
+            </md-datepicker>
+            <md-datepicker
+                    layout="row"
+                    md-min-date = "minDate2"
+                    md-max-date = "maxDate2"
+                    layout-align="start center"
+                    ng-model="endDate"
+                    md-placeholder="结束日期"
+                    md-date-filter
+                    ng-change="ctrl.dateChange({endDate:endDate})"
+            >
+            </md-datepicker>
+        </div>
+        <div class="navRight">
+            <input layout-align="end center" id="search" type="search" placeholder="search"  ng-keydown="ctrl.enter($event)"/>
+            <span class="split"></span>
+            <md-button id="zan" ng-click="ctrl.zan()" >
+                <md-tooltip md-direction="bottom">关键字探索</md-tooltip>
+            </md-button>
+            <md-button id="find" class="md-primary" ng-click="ctrl.showAdvanced($event)">
+                <md-tooltip md-direction="bottom">概念探索</md-tooltip>
+            </md-button>
+            <span class="split"></span>
+            <md-menu>
+                <md-button class="userBox" ng-click="$mdOpenMenu()">
+                    <md-tooltip md-direction="bottom">用户</md-tooltip>
+                </md-button>
+                <md-menu-content width="1" md-position-mode="target-right target">
+                    <md-menu-item>
+                        <md-button>
+                            {{ctrl.userName}}
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button ng-click="ctrl.logouting()">
+                            退出
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+        </div>
+    </md-nav-bar>

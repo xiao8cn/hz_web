@@ -1,0 +1,36 @@
+<scm-back></scm-back>
+<md-content class="md-padding">
+    <md-tabs md-selected="ctrl.tabIndex" md-dynamic-height md-border-bottom md-autoselect>
+        <md-tab ng-repeat="tab in ctrl.tabs" label="{{tab.label}}" ng-click="ctrl.mdTabSelect($index)">
+            <md-content layout="row" layout-wrap layout-padding>
+                <!--<scm-chart ng-click="ctrl.toggleRight($event)" ng-repeat="option in tab.param" option="option" flex="100"></scm-chart>
+               --> <scm-chart ng-repeat="option in tab.param" option="option" flex="100"></scm-chart>
+            </md-content>
+        </md-tab>
+    </md-tabs>
+</md-content>
+
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp select" md-component-id="right">
+    <md-toolbar class="selectHead">
+        <div>
+            <md-button class="md-icon-button zan" aria-label="search" ng-click="ctrl.tabSearch()">
+                <md-icon md-svg-icon="../../../../static/images/zan.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-content layout-padding>
+            <div layout="column" flex class="sideSel">
+                <md-radio-group ng-model="ctrl.selectedId" >
+                    <div ng-repeat='param in ctrl.params' class="row">
+                        <div flex layout='row' layout-padding layout-align="start center" >
+                            <md-radio-button flex
+                                             ng-value="param.id"
+                                             class="md-primary" >
+                                {{param.name}}
+                            </md-radio-button>
+                        </div>
+                    </div>
+                </md-radio-group>
+            </div>
+    </md-content>
+</md-sidenav>

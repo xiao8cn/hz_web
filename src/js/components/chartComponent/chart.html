@@ -1,0 +1,14 @@
+<div class="chartBox">
+    <div class="btnBox">
+        <!--ng-if="ctrl.exflag"-->
+        <md-button ng-if="ctrl.exflag" class="md-icon-button del" aria-label="del" ng-click="ctrl.showConfirm($event)">
+            <md-tooltip md-direction="bottom">删除模块</md-tooltip>
+            <md-icon md-svg-icon="../../../../static/images/del.svg"></md-icon>
+        </md-button>
+        <md-button ng-if="ctrl.exflag" class="md-icon-button explore" aria-label="explore" ng-click="ctrl.goPage()">
+            <md-tooltip md-direction="bottom">探索</md-tooltip>
+            <md-icon md-svg-icon="../../../../static/images/explore.svg"></md-icon>
+        </md-button>
+    </div>
+    <div id="{{ctrl.option.id}}" style="width: 500px;height: 400px;" ng-click="ctrl.option.clickFn"></div>
+</div>

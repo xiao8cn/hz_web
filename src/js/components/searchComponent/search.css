@@ -1,0 +1,54 @@
+.listLeft{
+    float: left;
+    margin-top: 20px;
+}
+
+.listItem{
+    border: 1px solid #cccccc;
+}
+
+scm-search{
+    padding: 20px;
+    overflow: hidden;
+}
+
+.listBox{
+    margin: 0 20px;
+}
+
+.listItem{
+    min-height: 40px;
+}
+
+.listItem h4{
+    font-weight: normal;
+    color: #666666;
+}
+md-toolbar.listBar{
+    background-color: rgb(227,239,240);
+    min-height: 20px;
+}
+
+.listBar .md-toolbar-tools{
+    height: 50px;
+}
+
+.groupX{
+    background: rgb(179,215,217);
+    margin:0;
+    border-radius: 0;
+}
+.groupX:first-child{
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius:10px 0 0 10px;
+}
+.groupX:last-child{
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+}
+.listBar .md-button:not([disabled]):hover {
+    background-color: rgba(158,158,158,0.2);
+    color: #666666;
+}
