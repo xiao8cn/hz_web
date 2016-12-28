@@ -50,7 +50,7 @@ export class treeController {
         this.ajaxService.searchPost(option)
             .then(res=>{
                 if(res.indexOf("Bad session") != -1){
-                    window.location.href=this.HZ_GLOBAL.hz_web_url.loginUrl;
+                    window.location.href=this.HZ_GLOBAL.hz_web_url.indexUrl;
                 }
                 option.param = [
                     'settime',
@@ -142,7 +142,8 @@ export class treeController {
     }
 
     logouting(){
-        window.location.href=this.HZ_GLOBAL.hz_web_url.loginUrl;
+        window.localStorage.removeItem("loginInfo");
+        window.location.href=this.HZ_GLOBAL.hz_web_url.indexUrl;
     }
 
 }

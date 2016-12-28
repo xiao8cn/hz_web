@@ -1,3 +1,5 @@
+import echarts from "echarts";
+
 export class chartController {
     constructor($timeout, $state,$mdSidenav, $mdDialog,chartService,ajaxService){
         this.$timeout = $timeout;
@@ -67,7 +69,7 @@ export class chartController {
             })
             this.$timeout(()=>{
                 parent.removeChild(box);
-            },50)
+            },200)
         },()=>{
         });
     }

@@ -35,7 +35,8 @@ class ajaxService {
                 if (xmlHttp.status == 200) {
                     let restxt=xmlHttp.responseText;
                     if(restxt.indexOf("Bad session") != -1){
-                        window.location.href = HZ_GLOBAL.hz_web_url.loginUrl;
+                        window.localStorage.removeItem("loginInfo");
+                        window.location.href = HZ_GLOBAL.hz_web_url.indexUrl;
                         reject();
                     }else{
                         resolve(restxt);
@@ -143,7 +144,8 @@ class ajaxService {
         if(userInfo){
             return userInfo.userId;
         }
-        window.location.href = HZ_GLOBAL.hz_web_url.loginUrl;
+        window.localStorage.removeItem("loginInfo");
+        window.location.href = HZ_GLOBAL.hz_web_url.indexUrl;
     }
 
     /**

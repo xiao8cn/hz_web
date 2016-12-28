@@ -10,6 +10,11 @@ export class viewController{
         this.selecteds = [];
         this.init_params = commonService.getInitParam();
         this.tabIndex = 0;
+        let localjson = JSON.parse(window.localStorage.getItem(`${ajaxService.getUserName()+this.dateType}Option`));
+        if(localjson){
+            this.option = localjson.option;
+        }
+        console.log(localjson);
     }
 
     $onInit(){
@@ -120,6 +125,11 @@ export class viewController{
                 id : `${this.dateType}${this.commonService.getUuid()}`,
             },
             dateType = this.dateType;
+
+        let localjson = JSON.parse(window.localStorage.getItem(`${this.ajaxService.getUserName()+this.dateType}Option`));
+        if(localjson){
+            this.option = localjson.option;
+        }
 
         this.option.push(option);
         this.options = this.option;

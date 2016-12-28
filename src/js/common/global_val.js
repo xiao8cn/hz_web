@@ -1,6 +1,5 @@
 export const HZ_GLOBAL = {
     hz_web_url : {
-        loginUrl : "http://localhost:8080/login.html",
         indexUrl : "http://localhost:8080/webpack-dev-server/index.html"
     },
     interface_url :{

@@ -12,22 +12,13 @@ import "../common/angular-locale_zh-cn";
 /**
  * 引入页面需要用到的组件
  */
-import {loginComponent} from "../components/loginComponent/login.component";                 //主页组件
 import {indexComponent} from "../components/indexComponent/index.component";                 //主页组件
 import {ComponentsModule} from "../components/components";        //组件工厂
 
 import ServiceModule from "../common/service.module";                    //service 等其他组件
 import FilterModule from "../common/filter.module";                    //filter 等其他组件
 
-/**
- * scm module 的angular 基础配置
- * @type {angular.Module}
- */
-let scm_web = angular.module("scm",[
-    ServiceModule.name,
-])
-
-let scm_index_web = angular.module("scm_index",[
+let scm_web = angular.module("scm_index",[
     ServiceModule.name,
     FilterModule.name,
     ComponentsModule.name,
@@ -39,7 +30,7 @@ let scm_index_web = angular.module("scm_index",[
     $mdThemingProvider.theme('default');
 })
 
-scm_index_web.config(function($stateProvider,$locationProvider) {
+scm_web.config(function($stateProvider,$locationProvider) {
 
     let loginInfo = JSON.parse(window.localStorage.getItem("loginInfo")),
         params = [['settime',"3 8 26 3 0 0 set-dfl",'1 0 99 (fwex)']];
@@ -881,5 +872,4 @@ scm_index_web.config(function($stateProvider,$locationProvider) {
 /**
  * 主页面的组件配置
  */
-scm_web.component('login',loginComponent);          //登陆页
-scm_index_web.component('app',indexComponent);      //主页
+scm_web.component('app',indexComponent);      //主页

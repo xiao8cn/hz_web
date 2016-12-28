@@ -1,4 +1,23 @@
-<div layout="column">
+<div class="model" ng-if="loginFlag">
+    <div class="container">
+        <div class="head">
+            <div class="headLeft">
+                <a href="#"><img src="../../../../static/images/logo.png"></a>
+            </div>
+            <div class="headRight">
+                <h1>Let's get started</h1>
+                <p>简单的分析</p>
+            </div>
+        </div>
+        <div class="inputBox clear">
+            <input name="loginName" type="text" placeholder="登陆用户" ng-model="ctrl.loginName" ng-keydown="ctrl.enter($event)"/>
+            <input name="password" type="password" placeholder="登陆密码" ng-model="ctrl.password"  ng-keydown="ctrl.enter($event)"/>
+        </div>
+        <a class="loginBtn" ng-click="ctrl.doLogin(ctrl.loginName,ctrl.password)">Login</a>
+    </div>
+</div>
+
+<div layout="column" ng-if="loginFlag==false">
     <div flex class="header">
         <scm-tree option="ctrl.params"></scm-tree>
     </div>
