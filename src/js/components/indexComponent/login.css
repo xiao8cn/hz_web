@@ -11,7 +11,7 @@ body{
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-scolling: touch;
-    background: #fefefe;
+    background: rgb(241,241,250);
 }
 input[type='text']{
     background-position-y:-1px;

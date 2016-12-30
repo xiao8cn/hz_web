@@ -26,7 +26,9 @@
     float: left;
     padding: 0 5px;
 }
-
+md-table-container table.md-table{
+    background: rgb(241,241,250);
+}
 
 md-backdrop.md-edit-dialog-backdrop {
     z-index: 80;

@@ -9,12 +9,17 @@ export class viewController{
         this.selectedId = "1";
         this.selecteds = [];
         this.init_params = commonService.getInitParam();
-        this.tabIndex = 0;
+        this.tabIndex = 0 ;
         let localjson = JSON.parse(window.localStorage.getItem(`${ajaxService.getUserName()+this.dateType}Option`));
         if(localjson){
             this.option = localjson.option;
         }
         console.log(localjson);
+        this.test();
+    }
+
+    test(){
+        this.ajaxService.testJava();
     }
 
     $onInit(){

@@ -1,7 +1,10 @@
+body{
+    background: rgb(241,241,250);
+}
+
 .header{
     height: 48px;
 }
-
-.content{
-   /*padding-top: 50px;*/
+.md-table-pagination{
+    background: rgb(241,241,250);
 }

@@ -38,11 +38,13 @@ export class chartController {
         this.$state.go('tab', {option: this.option});
     }
 
+
     showConfirm(ev){
+
         // Appending dialog to document.body to cover sidenav in docs app
         let confirm = this.$mdDialog.confirm()
             .title('确定删除此模块？')
-            .textContent('删除后可以按需求添加.')
+            .textContent('删除后可以根据需求再次添加')
             .targetEvent(ev)
             .ok('删除')
             .cancel('取消');
@@ -73,5 +75,4 @@ export class chartController {
         },()=>{
         });
     }
-
 }

@@ -193,6 +193,17 @@ class ajaxService {
         return browser;
     }
 
+    testJava(){
+
+        /*this.$http({
+            method : "GET",
+            url:"http://localhost:9000/hozo/hello"
+        }).success(res=>{
+            console.log(res);
+        })*/
+
+    }
+
 }
 
 export default ajaxService;
