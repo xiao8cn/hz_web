@@ -1,7 +1,10 @@
 var webpack = require('webpack'),
     path = require("path"),
     commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
-    hotPlugin = new webpack.HotModuleReplacementPlugin();
+    hotPlugin = new webpack.HotModuleReplacementPlugin(),
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    CompressionWebpackPlugin = require('compression-webpack-plugin'),
+    HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // 热模式 webpack-dev-server --hot --quiet
 module.exports = {
@@ -9,6 +12,30 @@ module.exports = {
     plugins: [
         commonsPlugin,
         hotPlugin,
+        new ExtractTextPlugin('[name].[contenthash].css'),
+        new CompressionWebpackPlugin({ //gzip 压缩
+            asset: '[path].gz[query]',
+            algorithm: 'gzip',
+            test: new RegExp(
+                '\\.(js|css|png|svg)$'    //压缩 js 与 css
+            ),
+            threshold: 10240,
+            minRatio: 0.8
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',    //生成的文件，从 output.path 开始 output.path + "/react.html"
+            template: './index.html',  //读取的模板文件,这个路径是相对于当前这个配置文件的
+            inject: true, // 自动注入
+            minify: {
+                removeComments: true,        //去注释
+                collapseWhitespace: true,    //压缩空格
+                removeAttributeQuotes: true  //去除属性引用
+                // more options:
+                // https://github.com/kangax/html-minifier#options-quick-reference
+            },
+            //必须通过上面的 CommonsChunkPlugin 的依赖关系自动添加 js，css 等
+            chunksSortMode: 'dependency'
+        })
     ],
     //页面入口文件配置web[
     entry: {
@@ -38,7 +65,7 @@ module.exports = {
     module: {
         //加载器配置
         loaders: [
-            { test: /\.js$/,exclude:/(node_modules)/,loader : 'babel',query : {presets:["es2015"]}},
+            { test: /\.js$/,exclude:/(node_modules)/,loaders: ['babel?presets[]=es2015']},
             { test: /\.css$/,  loader: 'style-loader!css-loader' },
             { test: /\.html$/, loader: 'html' },
             { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
