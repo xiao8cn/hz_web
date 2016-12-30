@@ -59,7 +59,6 @@ export class treeController {
 
                 this.ajaxService.searchPost(option)
                     .then(res=>{
-                        // console.log(res);
                     })
 
 
@@ -87,8 +86,8 @@ export class treeController {
     }
 
     dateChange(res){
-        this.$scope.startDate = res.startDate || $scope.startDate;
-        this.$scope.endDate = res.endDate || $scope.endDate;
+        this.$scope.startDate = res.startDate || this.$scope.startDate;
+        this.$scope.endDate = res.endDate || this.$scope.endDate;
         this.$state.go('day',{option:{
             startDate : this.$scope.startDate,
             endDate : this.$scope.endDate

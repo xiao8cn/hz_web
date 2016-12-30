@@ -1,21 +1,28 @@
 var webpack = require('webpack'),
     path = require("path"),
-    commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js'),
-    hotPlugin = new webpack.HotModuleReplacementPlugin();
+    commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+    // hotPlugin = new webpack.HotModuleReplacementPlugin();
 
 // 热模式 webpack-dev-server --hot --quiet
 module.exports = {
     //插件项
     plugins: [
         commonsPlugin,
-        hotPlugin,
+        // hotPlugin,
     ],
     //页面入口文件配置web[
     entry: {
         login : ['webpack/hot/dev-server','./src/js/main/index.js'],
     },
     devServer: {
-        hot: true
+        hot : true,
+        host : "localhost",
+        // host : "192.168.1.230",
+        port : 8080,
+        compress : true,
+        /*proxy: {
+            "**": "http://hozo.datatop.biz:1111/"
+        },*/
     },
     //入口文件输出配置
     /**

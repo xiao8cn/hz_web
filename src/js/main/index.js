@@ -9,7 +9,7 @@ import "angular-animate";
 
 import "../common/angular-locale_zh-cn";
 
-import "angular";
+import angular from "angular";
 
 /**
  * 引入页面需要用到的组件

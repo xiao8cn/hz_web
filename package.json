@@ -1,13 +1,12 @@
 {
   "name": "hz_web",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "babel-node tools/run bundle",
     "build": "webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base dist"
+    "dev": "webpack-dev-server --hot"
   },
   "author": "jiaoju.wu",
   "license": "ISC",
@@ -26,9 +25,10 @@
     "css-loader": "^0.25.0",
     "echarts": "^3.2.3",
     "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
     "html-loader": "^0.4.4",
     "jquery": "^3.1.1",
-    "less": "^2.7.1" ,
+    "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "node-sass": "^3.10.1",
     "plugins": "^0.4.2",
