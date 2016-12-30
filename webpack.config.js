@@ -1,14 +1,14 @@
 var webpack = require('webpack'),
     path = require("path"),
     commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
-    // hotPlugin = new webpack.HotModuleReplacementPlugin();
+    hotPlugin = new webpack.HotModuleReplacementPlugin();
 
 // 热模式 webpack-dev-server --hot --quiet
 module.exports = {
     //插件项
     plugins: [
         commonsPlugin,
-        // hotPlugin,
+        hotPlugin,
     ],
     //页面入口文件配置web[
     entry: {
@@ -30,6 +30,7 @@ module.exports = {
      */
     output: {
         publicPath: "http://localhost:8080/dist/js/main",
+        // publicPath: "http://192.168.1.230:8080/dist/js/main",
         path: path.resolve(__dirname, "dist/js/main"),
         filename: "bundle.js",
         // filename : "[name].js"
@@ -46,8 +47,8 @@ module.exports = {
         ]
     },
     externals: {
-        echarts: true,
         angular : true,
+        echarts: true,
     }
 };
 

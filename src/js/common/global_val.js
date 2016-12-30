@@ -1,6 +1,7 @@
 export const HZ_GLOBAL = {
     hz_web_url : {
-        indexUrl : "http://localhost:8080/webpack-dev-server/index.html"
+        indexUrl : "http://localhost:8080/webpack-dev-server/index.html",
+        // indexUrl : "http://hozo.datatop.biz:1111/index.html"
     },
     interface_url :{
         login_url : "http://hozo.datatop.biz:2222/cgi-bin/login30.exe",
