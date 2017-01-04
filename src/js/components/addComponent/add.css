@@ -19,9 +19,9 @@
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    background: url("../../../../static/images/add.png") no-repeat center center;
+    background: url("../../../../static/images/tch.png") no-repeat 0  -218px;
 }
 
 .addMore:hover{
-    background: url("../../../../static/images/adda.png") no-repeat center center;
+    background: url("../../../../static/images/tch.png") no-repeat -128px -218px;
 }

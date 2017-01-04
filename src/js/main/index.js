@@ -2,14 +2,12 @@
  * @author jiaoju.wu
  * es6 模块化方法，引入 页面需要的js文件
  */
-import "angular-material";
+import "angular-material"
 
 import "angular-ui-router";
 import "angular-animate";
 
 import "../common/angular-locale_zh-cn";
-
-import angular from "angular";
 
 /**
  * 引入页面需要用到的组件

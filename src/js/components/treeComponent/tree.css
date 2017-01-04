@@ -67,35 +67,34 @@
     left: 130px;
     min-height: 32px;
     min-width: 32px;
-    background: url("../../../../static/images/zan.png") no-repeat right center;
+    background: url("../../../../static/images/tch.png") no-repeat 0 0;
 }
 
 #find{
     display: inline-block;
-    background: url("../../../../static/images/find.png") no-repeat center center;
-    background-size: 20px 20px;
+    background: url("../../../../static/images/tch.png") no-repeat 2px  -29px;
+    background-size: 102px 138px;
     margin: -2px 0 0 6px;
     padding: 0;
-    min-width: 26px;
-    min-height: 26px;
+    min-width: 32px;
+    min-height: 32px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius:50%;
     border: 2px solid rgb(239,206,61);
 }
 
-.navRight .userBox{
+.navRight .userBox {
     display: inline-block;
-    height: 30px;
+    height: 35px;
     min-width: 28px;
-    width: 28px;
+    width: 35px;
     margin-top: 5px;
-    line-height: 30px;
     border-radius: 50%;
     border: none;
     outline: none;
-    background: url("../../../../static/images/user.png") no-repeat center center;
-    background-size: 35px 35px;
+    background: url("../../../../static/images/tch.png") no-repeat -1px -27px;
+    background-size: 213px  289px;
 }
 
 .split{
